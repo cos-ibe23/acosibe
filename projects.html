@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Anointed Cos-Ibe</div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="https://www.linkedin.com/in/cos-47b249343" target="_blank">Contact</a>
+  </nav>
+</header>
+
+<section class="content fade-in">
+
+  <h1>Projects</h1>
+
+  <p class="intro">
+    DevOps-focused work showcasing automation, scalability, and cloud-native engineering.
+  </p>
+
+  <!-- PROJECTS -->
+  <div class="projects-grid">
+
+    <div class="card glass">
+      <h3>CI Pipeline Automation</h3>
+      <p>Automated CI/CD pipeline using Docker & GitHub Actions.</p>
+      <a href="https://github.com/cos-ibe23/docker-ci-pipeline" target="_blank">View Code →</a>
+    </div>
+
+    <div class="card glass">
+      <h3>Cloud Deployment</h3>
+      <p>Provisioned infrastructure on GCP with automation.</p>
+      <a href="https://github.com/cos-ibe23/infra-runner" target="_blank">View Code →</a>
+    </div>
+
+    <div class="card glass">
+      <h3>Facial Recognition System</h3>
+      <p>AI-based attendance system with liveness detection.</p>
+      <a href="https://github.com/cos-ibe23/GregDance.com" target="_blank">View Code →</a>
+    </div>
+
+  </div>
+
+  <!-- METRICS -->
+  <div class="glass section metrics-box">
+    <h2>System Metrics</h2>
+
+    <div class="metrics">
+      <div class="metric"><p>98%</p><span>Deployment Success</span></div>
+      <div class="metric"><p>99.9%</p><span>Uptime</span></div>
+      <div class="metric"><p>85%</p><span>Automation</span></div>
+    </div>
+  </div>
+
+  <!-- TERMINAL -->
+  <div class="terminal-box">
+    <div class="terminal-header">devops@pipeline:~</div>
+    <div id="terminal-output"></div>
+  </div>
+
+  <!-- PIPELINE -->
+  <div class="pipeline">
+    <div>Code</div>
+    <span>→</span>
+    <div>Build</div>
+    <span>→</span>
+    <div>Test</div>
+    <span>→</span>
+    <div>Deploy</div>
+  </div>
+
+  <a href="index.html" class="btn back">← Back</a>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
