@@ -322,6 +322,79 @@ nav a {
   margin: 20px;
 }
 
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+
+  .content {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .intro {
+    font-size: 14px;
+  }
+
+  /* STACK PROJECTS */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  /* METRICS FIX */
+  .metrics {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .metric {
+    width: 80%;
+  }
+
+  /* TERMINAL FIX */
+  .terminal-box {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  /* PIPELINE STACK */
+  .pipeline {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pipeline span {
+    display: none;
+  }
+
+  /* NAV FIX */
+  nav {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+.card {
+  padding: 25px;
+  margin: 10px 0;
+}
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #38bdf8;
+}
+.section {
+  margin: 20px 0;
+}
 .btn {
   display: inline-block;
   background: #38bdf8;
