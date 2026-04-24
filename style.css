@@ -282,15 +282,19 @@ nav a {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin: 30px 0;
+  flex-wrap: wrap;
 }
 
 .pipeline div {
   background: #38bdf8;
   color: black;
-  padding: 8px 15px;
+  padding: 10px 15px;
   border-radius: 6px;
   font-size: 14px;
+}
+
+.pipeline span {
+  color: #38bdf8;
 }
 
 /* Back button */
@@ -338,11 +342,18 @@ nav a {
   }
 
   /* STACK PROJECTS */
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
+ .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+body {
+  overflow-x: hidden;
+}
 
+* {
+  box-sizing: border-box;
+}
   .card {
     padding: 20px;
     border-radius: 15px;
@@ -460,3 +471,8 @@ footer {
   .projects-grid {
     grid-template-columns: repeat(3,1fr);
   }
+@media (max-width: 768px) {
+  .pipeline {
+    flex-wrap: wrap;
+  }
+}
