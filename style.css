@@ -476,3 +476,20 @@ footer {
     flex-wrap: wrap;
   }
 }
+/* FEATURED PROJECT */
+.featured {
+  margin-top: 30px;
+  padding: 30px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  background: linear-gradient(135deg, rgba(56,189,248,0.1), rgba(0,0,0,0.4));
+}
+
+.featured h2 {
+  margin-bottom: 10px;
+}
+
+.featured a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #38bdf8;
+}
