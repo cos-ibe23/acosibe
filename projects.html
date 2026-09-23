@@ -1,109 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects</title>
+
+<title>Projects | Anointed Cos-Ibe</title>
+
+<meta name="description"
+      content="Cloud, DevOps and software engineering projects by Anointed Cos-Ibe.">
+
 <link rel="stylesheet" href="style.css">
 <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
 </head>
 
 <body>
 
 <header>
-  <div class="logo">Anointed Cos-Ibe</div>
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <a href="index.html" class="logo">Anointed Cos-Ibe</a>
+
+  <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+    <i class="ri-menu-line"></i>
+  </button>
 
   <nav id="nav">
+
     <a href="index.html">Home</a>
+
     <a href="resume.html">Resume</a>
+
     <a href="projects.html">Projects</a>
-    <a href="https://www.linkedin.com/in/cos-47b249343" target="_blank">Contact</a>
+
+    <a href="https://www.linkedin.com/in/anointed-cos-ibe" target="_blank" rel="noopener">
+      LinkedIn
+    </a>
+
   </nav>
+
 </header>
 
-<section class="content fade-in">
-  <h1>Projects</h1>
+ <a href="index.html" class="btn secondary">
+    ← Back Home
+  </a>
 
-  <p class="intro">
-    DevOps-focused work showcasing automation, scalability, and cloud-native engineering.
-  </p>
+<main class="content">
 
-  <!-- FIRST ROW PROJECTS -->
-  <div class="projects-grid">
+  <section class="page-hero">
 
-    <div class="card glass">
-      <h3>CI Pipeline Automation</h3>
-      <p>Automated CI/CD pipeline using Docker & GitHub Actions.</p>
-      <a href="https://github.com/cos-ibe23/docker-ci-pipeline" target="_blank">View Code →</a>
-    </div>
+    <p class="eyebrow">SELECTED WORK</p>
 
-    <div class="card glass">
-      <h3>Cloud Deployment</h3>
-      <p>Provisioned infrastructure on GCP with automation.</p>
-      <a href="https://github.com/cos-ibe23/infra-runner" target="_blank">View Code →</a>
-    </div>
+    <h1>Projects</h1>
 
-  </div>
-
-  <!-- FEATURED PROJECT (FULL WIDTH) -->
-  <div class="card glass featured">
-    <h2>🚀 Facial Recognition Attendance System</h2>
-    <p>
-      AI-powered attendance system with liveness detection using DeepFace,
-      built with React, NestJS, and FastAPI. Fully containerized with Docker.
+    <p class="intro">
+      A selection of projects demonstrating cloud engineering,
+      DevOps automation and full-stack application development.
     </p>
-    <a href="https://github.com/cos-ibe23/GregDance.com" target="_blank">
-      View Code →
-    </a>
-  </div>
 
-  <!-- METRICS -->
-  <div class="glass section">
-    <h2>System Metrics</h2>
+  </section>
+
+
+  <section class="projects-grid">
+
+
+    <article class="project-card featured-project-card">
+
+      <div class="project-icon">
+        <i class="ri-shopping-bag-3-line"></i>
+      </div>
+
+      <div class="project-content">
+
+        <span class="project-label">
+          FULL-STACK APPLICATION
+        </span>
+
+        <h2>Mira Essentials</h2>
+
+        <p>
+          An E-commerce application built with
+          React/Vite and Node.js/Express.
+        </p>
+
+        <ul>
+
+          <li>
+            Product variants, carts and checkout
+          </li>
+
+          <li>
+            Customer order tracking
+          </li>
+
+          <li>
+            Paystack payment integration
+          </li>
+
+          <li>
+            Bank-transfer payment confirmation workflow
+          </li>
+
+          <li>
+            Admin dashboard
+          </li>
+
+          <li>
+            PostgreSQL + Prisma ORM
+          </li>
+
+        </ul>
+
+        <div class="tech-tags">
+          <span>React</span>
+          <span>Vite</span>
+          <span>Node.js</span>
+          <span>Express</span>
+          <span>PostgreSQL</span>
+          <span>Prisma</span>
+        </div>
+
+        <a href="https://miraessentials.onrender.com"
+           target="_blank"
+           rel="noopener"
+           class="project-link">
+
+          View Live Project
+          <i class="ri-arrow-right-up-line"></i>
+
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="project-card">
+
+      <div class="project-icon">
+        <i class="ri-git-merge-line"></i>
+      </div>
+
+      <div class="project-content">
+
+        <span class="project-label">
+          CI/CD AUTOMATION
+        </span>
+
+        <h2>CI Pipeline Automation</h2>
+
+        <p>
+          Continuous integration pipeline using GitHub Actions
+          to automate testing and deployment for a demo application.
+        </p>
+
+        <ul>
+
+          <li>
+            Integrated Git and GitHub for version control
+          </li>
+
+          <li>
+            Automated CI workflow with GitHub Actions
+          </li>
+
+          <li>
+            Automated application testing
+          </li>
+
+          <li>
+            Automated deployment workflow
+          </li>
+
+        </ul>
+
+        <div class="tech-tags">
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>GitHub Actions</span>
+          <span>Docker</span>
+          <span>CI/CD</span>
+        </div>
+
+        <a href="https://github.com/cos-ibe23/docker-ci-pipeline"
+           target="_blank"
+           rel="noopener"
+           class="project-link">
+
+          View GitHub Repository
+          <i class="ri-arrow-right-up-line"></i>
+
+        </a>
+
+      </div>
+
+    </article>
+
+
+  </section>
+
+
+  <section class="impact-section">
+
+  
 
     <div class="metrics">
+
       <div class="metric">
-        <h3>98%</h3>
-        <p>Deployment Success</p>
+        <strong>40%</strong>
+        <span>Deployment efficiency improvement</span>
       </div>
 
       <div class="metric">
-        <h3>99.9%</h3>
-        <p>Uptime</p>
+        <strong>60%</strong>
+        <span>Infrastructure setup-time reduction</span>
       </div>
 
-      <div class="metric">
-        <h3>85%</h3>
-        <p>Automation</p>
-      </div>
     </div>
-  </div>
+
+  </section>
 
 
-</section>
+  <section class="pipeline-section">
 
-  <!-- TERMINAL -->
-  <div class="terminal-box">
-    <div class="terminal-header">devops@pipeline:~</div>
-    <div id="terminal-output"></div>
-  </div>
+    <div class="terminal-box">
 
-  <!-- PIPELINE -->
-  <div class="pipeline">
-    <div>Code</div>
-    <span>→</span>
-    <div>Build</div>
-    <span>→</span>
-    <div>Test</div>
-    <span>→</span>
-    <div>Deploy</div>
-  </div>
+      <div class="terminal-header">
+        <span>devops@pipeline:~</span>
+        <span>● ● ●</span>
+      </div>
 
-  <a href="index.html" class="btn back">← Back</a>
+      <div id="terminal-output"></div>
 
-</section>
+    </div>
+
+    <div class="pipeline">
+
+      <div>Code</div>
+      <span>→</span>
+
+      <div>Build</div>
+      <span>→</span>
+
+      <div>Test</div>
+      <span>→</span>
+
+      <div>Deploy</div>
+
+    </div>
+
+  </section>
+
+
+  <a href="index.html" class="btn secondary">
+    ← Back Home
+  </a>
+
+</main>
+
 
 <script src="script.js"></script>
+
 </body>
 </html>
